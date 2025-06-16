@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        #app {
+            max-width: 600px;
+            width: 90%;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .quote-container {
+            text-align: center;
+        }
+        .quote {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        .author {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 2rem;
+        }
+        button {
+            background-color: #667eea;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        button:hover {
+            background-color: #5a67d8;
+            transform: translateY(-2px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 0.5s;
+        }
+        .fade-enter-from, .fade-leave-to {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="quote-container">
+            <Transition name="fade" mode="out-in">
+                <div :key="currentQuote.text">
+                    <p class="quote">"{{ currentQuote.text }}"</p>
+                    <p class="author">- {{ currentQuote.author }}</p>
+                </div>
+            </Transition>
+            <button @click="getRandomQuote">New Quote</button>
+        </div>
+    </div>
+
+    <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const quotes = [
+                    { text: "Be yourself; everyone else is already taken.", author: "Oscar Wilde" },
+                    { text: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", author: "Albert Einstein" },
+                    { text: "Be the change that you wish to see in the world.", author: "Mahatma Gandhi" },
+                    { text: "In three words I can sum up everything I've learned about life: it goes on.", author: "Robert Frost" },
+                    { text: "If you tell the truth, you don't have to remember anything.", author: "Mark Twain" },
+                    { text: "To live is the rarest thing in the world. Most people exist, that is all.", author: "Oscar Wilde" },
+                    { text: "Without music, life would be a mistake.", author: "Friedrich Nietzsche" },
+                    { text: "It is better to be hated for what you are than to be loved for what you are not.", author: "Andre Gide" },
+                    { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+                    { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" }
+                ]
+
+                const currentQuote = ref(quotes[Math.floor(Math.random() * quotes.length)])
+
+                const getRandomQuote = () => {
+                    let newQuote
+                    do {
+                        newQuote = quotes[Math.floor(Math.random() * quotes.length)]
+                    } while (newQuote === currentQuote.value)
+                    currentQuote.value = newQuote
+                }
+
+                return {
+                    currentQuote,
+                    getRandomQuote
+                }
+            }
+        }).mount('#app')
+    </script>
+</body>
+</html>
