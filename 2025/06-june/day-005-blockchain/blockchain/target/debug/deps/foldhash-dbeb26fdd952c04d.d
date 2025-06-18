@@ -1,0 +1,11 @@
+/Users/jose/Projects/daily-coding-challenge/2025/06-june/day-005-blockchain/blockchain/target/debug/deps/libfoldhash-dbeb26fdd952c04d.rmeta: /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/lib.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/fast.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/quality.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/seed.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/convenience.rs
+
+/Users/jose/Projects/daily-coding-challenge/2025/06-june/day-005-blockchain/blockchain/target/debug/deps/libfoldhash-dbeb26fdd952c04d.rlib: /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/lib.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/fast.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/quality.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/seed.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/convenience.rs
+
+/Users/jose/Projects/daily-coding-challenge/2025/06-june/day-005-blockchain/blockchain/target/debug/deps/foldhash-dbeb26fdd952c04d.d: /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/lib.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/fast.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/quality.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/seed.rs /Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/convenience.rs
+
+/Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/lib.rs:
+/Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/fast.rs:
+/Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/quality.rs:
+/Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/seed.rs:
+/Users/jose/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.1.5/src/convenience.rs:
