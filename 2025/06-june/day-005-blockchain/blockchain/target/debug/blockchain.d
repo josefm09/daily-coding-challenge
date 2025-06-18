@@ -1,1 +1,0 @@
-/Users/jose/Projects/daily-coding-challenge/2025/06-june/day-005-blockchain/blockchain/target/debug/blockchain: /Users/jose/Projects/daily-coding-challenge/2025/06-june/day-005-blockchain/blockchain/src/main.rs
