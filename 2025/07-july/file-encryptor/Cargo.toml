@@ -1,0 +1,12 @@
+[package]
+name = "file-encryptor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = "0.10.1"
+base64 = "0.21.0"
+rand = "0.8.5"
+
+[dev-dependencies]
+tempfile = "3.5.0"
